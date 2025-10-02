@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Slack Channel Prefix Hider",
+  "version": "1.0",
+  "description": "サイドバーに表示されるSlackチャンネル名から、指定したプレフィックスを非表示にします。",
+  "author": "AreUtoo",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Slack Channel Prefix Hider"
+  },
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}

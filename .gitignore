@@ -1,0 +1,7 @@
+REFACTOR_PLAN.md
+.prettierignore
+.prettierrc.json
+eslint.config.cjs
+package-lock.json
+package.json
+node_modules/
